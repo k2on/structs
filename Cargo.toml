@@ -1,8 +1,12 @@
 [package]
-name = "structs"
+name = "k2on-structs"
 version = "0.1.0"
+authors = ["Max Koon"]
+description = "Standardized library of structs for building software."
+license = "MIT"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+repository = "https://github.com/k2on/structs"
 
 [dependencies]
+chrono = { version = "0.4.24", features = ["serde"] }
+serde = { version = "1.0.160", features = ["derive"] }
